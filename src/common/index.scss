@@ -1,5 +1,16 @@
+$primary-color: #5fb4a2;
+$secondary-color: #fafafa;
+$dark-blue: #203a4c;
+$dark-blue-grayish: #33323d;
+$light-gray: #d7d7d7;
+$red: #f43030;
+$font-family-ibarra: 'Ibarra Real Nova', serif;
+$font-family-public: 'Public Sans', sans-serif;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: $font-family-public;
+  font-style: normal;
 }
