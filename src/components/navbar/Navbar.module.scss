@@ -1,12 +1,55 @@
+@import '/src/common/index.scss';
+
 .container {
   padding: 32px 32px 8px 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
+  @include for-size(tablet-portrait-up) {
+    padding: 64px 40px 8px 40px;
+  }
+
+  @include for-size(desktop-up) {
+    padding: 64px 164px 8px 164px;
+  }
+
   .left,
   .right {
     display: flex;
     align-items: center;
   }
+}
+
+.right__img {
+  display: block;
+
+  @include for-size(tablet-portrait-up) {
+    display: none;
+  }
+}
+
+.right__navlinks {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+
+  @include for-size(phone-only) {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $dark-blue-grayish;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
+
+a[class='active'] {
+  color: $primary-color;
 }
