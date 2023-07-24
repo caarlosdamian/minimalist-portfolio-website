@@ -5,7 +5,9 @@ export const App = () => {
   return (
     <main>
       <Navbar />
-      <Outlet />
+      <section className="content">
+        <Outlet />
+      </section>
       <Footer />
     </main>
   );
