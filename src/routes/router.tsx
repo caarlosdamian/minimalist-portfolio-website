@@ -1,22 +1,25 @@
 import { Suspense, lazy } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
+import { App } from '../common/App';
 
-export const Router = () => {
-  const Home = lazy(() => import('../pages/home/Home'));
-  const Portafolio = lazy(() => import('../pages/portafolio/Portafolio'));
-  const Contact = lazy(() => import('../pages/contact/Contact'));
-  const Detail = lazy(() => import('../pages/detail/Detail'));
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+} from 'react-router-dom';
+import { routes } from './routes';
+import { Loader } from '../components';
 
-  return (
-    <BrowserRouter basename="/">
-      <Suspense fallback={<div>Loading....</div>}>
-        <Routes>
-          <Route path="/" Component={Home} />
-          <Route path="/portafolio" Component={Portafolio} />
-          <Route path="/contact" Component={Contact} />
-          <Route path="/detail" Component={Detail} />
-        </Routes>
-      </Suspense>
-    </BrowserRouter>
-  );
-};
+export const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<App />}>
+      {routes.map((route) => (
+        <Route
+          index={route.path === '/'}
+          path={route.path}
+          key={route.id}
+          element={<Suspense fallback={<Loader />}>{route.component}</Suspense>}
+        />
+      ))}
+    </Route>
+  )
+);

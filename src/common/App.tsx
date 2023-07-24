@@ -1,9 +1,12 @@
-import { Router } from '../routes/router';
+import { Outlet } from 'react-router-dom';
+import { Footer, Navbar } from '../components';
 
 export const App = () => {
   return (
     <main>
-      <Router />
+      <Navbar />
+      <Outlet />
+      <Footer />
     </main>
   );
 };
