@@ -9,7 +9,7 @@ export const Router = () => {
 
   return (
     <BrowserRouter basename="/">
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div>Loading....</div>}>
         <Routes>
           <Route path="/" Component={Home} />
           <Route path="/portafolio" Component={Portafolio} />
