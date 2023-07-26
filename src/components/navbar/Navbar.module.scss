@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 
   @include for-size(tablet-portrait-up) {
     padding: 64px 40px 8px 40px;
