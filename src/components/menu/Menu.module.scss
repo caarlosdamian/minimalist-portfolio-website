@@ -2,6 +2,27 @@
   background: #33323d;
   width: 223px;
   height: 186px;
-  padding: 40px 64px;
+  padding: 40px 62px;
   position: absolute;
+  top: 84px;
+  right: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  transition: all 3s ease-in-out ;
+
+  a {
+    color: #fff;
+    text-align: center;
+    font-family: Public Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
 }
