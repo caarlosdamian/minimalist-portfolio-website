@@ -13,9 +13,15 @@ export const Navbar = () => {
     transition: 'transform 0.3s ease',
   };
 
+  const links = navItems.map(({ id, label, path }) => (
+    <NavLink to={path} key={id} onClick={() => setShow(false)}>
+      {label}
+    </NavLink>
+  ));
+
   return (
     <nav className={styles.container}>
-      {show && <Menu />}
+      {show && <Menu links={links} />}
       <div className={styles.left}>
         <img src={logo} alt="logo" />
       </div>
@@ -27,13 +33,7 @@ export const Navbar = () => {
           style={iconStyle}
           onClick={() => setShow(!show)}
         />
-        <div className={styles.right__navlinks}>
-          {navItems.map(({ id, label, path }) => (
-            <NavLink to={path} key={id}>
-              {label}
-            </NavLink>
-          ))}
-        </div>
+        <div className={styles.right__navlinks}>{links}</div>
       </div>
     </nav>
   );

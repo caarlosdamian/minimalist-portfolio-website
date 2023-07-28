@@ -24,8 +24,7 @@
 
 .right__img {
   display: block;
-  transition: all 3s ease-in-out ;
-
+  cursor: pointer;
   @include for-size(tablet-portrait-up) {
     display: none;
   }
