@@ -1,0 +1,62 @@
+@import '/src/common/index.scss';
+
+.btn {
+  border: none;
+  display: flex;
+  background: #203a4c;
+  align-items: center;
+  width: 200px;
+  height: 48px;
+  cursor: pointer;
+
+  .label {
+    padding: 17px;
+    flex: 2;
+    color: #fff;
+    text-align: center;
+    font-family: $font-family-public;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    svg path {
+      stroke: $white;
+    }
+    background: #5fb4a2;
+  }
+}
+
+.secondary {
+  border: 1px solid #33323d;
+  background: transparent;
+
+  &:hover {
+    background: #33323d;
+
+    .label {
+      color: $white;
+    }
+  }
+
+  .label {
+    color: #33323d;
+  }
+}
+
+.arrow {
+  background: rgba(0, 0, 0, 0.1);
+  width: 48px;
+  height: 48px;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg path {
+    transition: stroke 0.3s; /* Optional: add a smooth transition effect */
+  }
+}

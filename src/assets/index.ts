@@ -8,6 +8,9 @@ import twitter from './icons/twitter.svg';
 import githubLight from './icons/githubLight.svg';
 import linkedinLight from './icons/linkedinLight.svg';
 import twitterLight from './icons/twitterLight.svg';
+import heroDesktop from './homepage/desktop/image-homepage-hero@2x.jpg';
+import heroMobile from './homepage/mobile/image-homepage-hero@2x.jpg';
+import heroTablet from './homepage/tablet/image-homepage-hero@2x.jpg';
 
 export {
   logo,
@@ -19,5 +22,8 @@ export {
   twitter,
   githubLight,
   linkedinLight,
-  twitterLight
+  twitterLight,
+  heroDesktop,
+  heroMobile,
+  heroTablet,
 };

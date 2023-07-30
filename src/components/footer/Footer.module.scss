@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   background: $dark-blue-grayish;
+  width: 100vw;
 
   .content {
     width: 100vw;
@@ -23,7 +24,8 @@
     }
 
     @include for-size(desktop-up) {
-      padding: 24px 165px;
+      padding: 24px 0;
+      max-width: 1110px;
     }
 
     .navLinks {

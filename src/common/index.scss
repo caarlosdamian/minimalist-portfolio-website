@@ -40,6 +40,17 @@ $font-family-public: 'Public Sans', sans-serif;
   font-style: normal;
 }
 
+main {
+ 
+  // padding: 0 165px;
+  @include for-size(tablet-portrait-up) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
 .content {
   padding: 32px;
 }

@@ -8,11 +8,13 @@
   position: relative;
 
   @include for-size(tablet-portrait-up) {
-    padding: 64px 40px 8px 40px;
+    padding: 64px 0 8px 0;
+    width: 689px;
   }
 
   @include for-size(desktop-up) {
-    padding: 64px 164px 8px 164px;
+    padding: 64px 0 8px 0;
+    width: 1110px;
   }
 
   .left,
