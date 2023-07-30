@@ -1,11 +1,13 @@
+@import '/src/common/index.scss';
+
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #33323d;
+  background: $dark-blue-grayish;
 
   .content {
-    width: 375px;
+    width: 100vw;
     height: 354px;
     display: flex;
     align-items: center;
@@ -13,14 +15,29 @@
     gap: 40px;
     padding: 56px 134px;
 
+    @include for-size(tablet-portrait-up) {
+      flex-direction: row;
+      padding: 24px 40px;
+      justify-content: space-between;
+      height: 80px;
+    }
+
+    @include for-size(desktop-up) {
+      padding: 24px 165px;
+    }
+
     .navLinks {
       display: flex;
       align-items: center;
       flex-direction: column;
       gap: 32px;
+      @include for-size(tablet-portrait-up) {
+        flex-direction: row;
+        flex: 2;
+      }
 
       a {
-        color: #fff;
+        color: $white;
         text-align: center;
         font-size: 12px;
         font-weight: 400;

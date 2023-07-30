@@ -1,5 +1,7 @@
+@import '/src/common/index.scss';
+
 .container {
-  background: #33323d;
+  background: $dark-blue-grayish;
   width: 223px;
   height: 186px;
   padding: 40px 62px;
@@ -11,14 +13,13 @@
   gap: 32px;
   align-items: center;
   justify-content: center;
-  transition: all 3s ease-in-out ;
+  transition: all 3s ease-in-out;
 
   a {
-    color: #fff;
+    color: $white;
     text-align: center;
-    font-family: Public Sans;
+    font-family: $font-family-public;
     font-size: 12px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 2px;
