@@ -27,9 +27,8 @@ export const Card = ({
     <section className={styles.card}>
       <picture>
         <source srcSet={mobileImg} media="(max-width: 599px)" />
-        <source srcSet={tableImg} media="(min-width: 600px)" />
+        <source srcSet={tableImg} media="(max-width: 1199px)" />
         <source srcSet={desktopImg} media="(min-width: 1200px)" />
-
         <img src={desktopImg} alt="hero" className={styles.card__img} />
       </picture>
       <section className={styles.card__info}>
