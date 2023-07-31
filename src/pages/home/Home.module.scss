@@ -13,15 +13,6 @@
     justify-content: center;
     gap: 24px;
     position: relative;
-    width: 311px;
-
-    @include for-size(tablet-portrait-up) {
-      width: 688px;
-    }
-
-    @include for-size(desktop-up) {
-      width: 1110px;
-    }
 
     .hero__info {
       display: flex;
@@ -32,9 +23,9 @@
         background: #fafafa;
         position: absolute;
         width: 514px;
-        bottom: 25px;
+        bottom: 0;
         left: -1px;
-        padding: 56px 56px 0 56px;
+        padding: 56px 56px 0 0;
       }
 
       @include for-size(desktop-up) {
@@ -51,12 +42,12 @@
         letter-spacing: -0.446px;
         @include for-size(tablet-portrait-up) {
           font-size: 40px;
-          line-height: 42px; /* 105% */
+          line-height: 42px;
           letter-spacing: -0.357px;
         }
         @include for-size(desktop-up) {
           font-size: 50px;
-          line-height: 50px; /* 100% */
+          line-height: 50px;
           letter-spacing: -0.446px;
         }
       }
@@ -65,14 +56,5 @@
 
   .about {
     padding: 0 165px;
-  }
-}
-
-.hero__img {
-  object-fit: contain;
-  max-width: 100%;
-  @include for-size(tablet-portrait-up) {
-  }
-  @include for-size(desktop-up) {
   }
 }

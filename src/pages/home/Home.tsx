@@ -8,7 +8,6 @@ import {
 } from '../../assets';
 import { Button } from '../../components/button/Button';
 import { Card } from '../../components/card/Card';
-import { Separator } from '../../components/separator/Separator';
 import styles from './Home.module.scss';
 
 const Home = () => {
@@ -17,12 +16,11 @@ const Home = () => {
       <section className={styles.hero}>
         <picture>
           <source srcSet={heroMobile} media="(max-width: 599px)" />
-          <source srcSet={heroTablet} media="(min-width: 600px)" />
+          <source srcSet={heroTablet} media="(max-width: 1199px)" />
           <source srcSet={heroDesktop} media="(min-width: 1200px)" />
 
           <img src={heroMobile} alt="hero" className={styles.hero__img} />
         </picture>
-        <Separator />
         <section className={styles.hero__info}>
           <h1 className={styles.hero__title}>
             Hey, I’m Alex Spencer and I love building beautiful websites

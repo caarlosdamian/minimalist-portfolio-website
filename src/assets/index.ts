@@ -8,12 +8,12 @@ import twitter from './icons/twitter.svg';
 import githubLight from './icons/githubLight.svg';
 import linkedinLight from './icons/linkedinLight.svg';
 import twitterLight from './icons/twitterLight.svg';
-import heroDesktop from './homepage/desktop/image-homepage-hero@2x.jpg';
-import heroMobile from './homepage/mobile/image-homepage-hero@2x.jpg';
-import heroTablet from './homepage/tablet/image-homepage-hero@2x.jpg';
+import heroDesktop from './homepage/desktop/image-homepage-hero.jpg';
+import heroMobile from './homepage/mobile/image-homepage-hero.jpg';
+import heroTablet from './homepage/tablet/image-homepage-hero.jpg';
 import profileDesktop from './homepage/desktop/image-homepage-profile.jpg';
-import profileMobile from './homepage/mobile/image-homepage-profile@2x.jpg';
-import profileTablet from './homepage/tablet/image-homepage-profile@2x.jpg';
+import profileMobile from './homepage/mobile/image-homepage-profile.jpg';
+import profileTablet from './homepage/tablet/image-homepage-profile.jpg';
 
 export {
   logo,
