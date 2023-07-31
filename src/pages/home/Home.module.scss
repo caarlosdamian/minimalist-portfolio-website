@@ -4,16 +4,24 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  // justify-content: center;
-  // padding: 32px;
   gap: 96px;
-  position: relative;
+
   .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 24px;
+    position: relative;
+    width: 311px;
+
+    @include for-size(tablet-portrait-up) {
+      width: 688px;
+    }
+
+    @include for-size(desktop-up) {
+      width: 1110px;
+    }
 
     .hero__info {
       display: flex;
@@ -24,14 +32,14 @@
         background: #fafafa;
         position: absolute;
         width: 514px;
-        bottom: 0;
-        left: 0;
+        bottom: 25px;
+        left: -1px;
         padding: 56px 56px 0 56px;
       }
 
-      // @include for-size(desktop-up) {
-      //   padding: 64px 164px 8px 164px;
-      // }
+      @include for-size(desktop-up) {
+        width: 445px;
+      }
 
       .hero__title {
         color: #33323d;
@@ -46,21 +54,25 @@
           line-height: 42px; /* 105% */
           letter-spacing: -0.357px;
         }
+        @include for-size(desktop-up) {
+          font-size: 50px;
+          line-height: 50px; /* 100% */
+          letter-spacing: -0.446px;
+        }
       }
     }
+  }
+
+  .about {
+    padding: 0 165px;
   }
 }
 
 .hero__img {
-  object-fit: cover;
-  width: 311px;
-  height: 271px;
+  object-fit: contain;
+  max-width: 100%;
   @include for-size(tablet-portrait-up) {
-    width: 688px;
-    height: 600px;
   }
   @include for-size(desktop-up) {
-    width: 1110px;
-    object-fit: cover;
   }
 }

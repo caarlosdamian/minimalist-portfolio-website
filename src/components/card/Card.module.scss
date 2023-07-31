@@ -1,0 +1,52 @@
+@import '/src/common/index.scss';
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @include for-size(tablet-portrait-up) {
+    flex-direction: row;
+    gap: 69px;
+  }
+
+  @include for-size(desktop-up) {
+    width: 1015px;
+    max-height: 600px;
+    gap: 125px;
+  }
+
+  .card__info {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    flex: 1;
+
+    .card__title {
+      color: $dark-blue-grayish;
+      font-family: $font-family-ibarra;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 42px;
+      letter-spacing: -0.357px;
+    }
+
+    .card__desc {
+      color: $dark-blue-grayish;
+      font-family: $font-family-public;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 30px;
+      opacity: 0.800000011920929;
+    }
+  }
+  .card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include for-size(desktop-up) {
+      // min-width: 560px;
+      // max-height: 600px;
+      // width: 100%;
+    }
+  }
+}

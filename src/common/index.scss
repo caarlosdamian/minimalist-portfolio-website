@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css");
 $primary-color: #5fb4a2;
 $secondary-color: #fafafa;
 $dark-blue: #203a4c;
@@ -41,8 +42,6 @@ $font-family-public: 'Public Sans', sans-serif;
 }
 
 main {
- 
-  // padding: 0 165px;
   @include for-size(tablet-portrait-up) {
     display: flex;
     align-items: center;
@@ -53,4 +52,8 @@ main {
 
 .content {
   padding: 32px;
+}
+
+.links {
+  text-decoration: none;
 }
