@@ -1,8 +1,7 @@
-import React from 'react';
-import styles from './Card.module.scss';
 import { Button } from '../button/Button';
 import { Link } from 'react-router-dom';
 import { Separator } from '../separator/Separator';
+import styles from './Card.module.scss';
 
 interface Props {
   mobileImg: string;

@@ -1,4 +1,4 @@
-@import url("https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css");
+@import url('https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css');
 $primary-color: #5fb4a2;
 $secondary-color: #fafafa;
 $dark-blue: #203a4c;
@@ -39,6 +39,7 @@ $font-family-public: 'Public Sans', sans-serif;
   box-sizing: border-box;
   font-family: $font-family-public;
   font-style: normal;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -50,10 +51,23 @@ main {
   }
 }
 
-.content {
+.body {
   padding: 32px;
+  min-height: calc(100vh - 184px);
 }
 
 .links {
   text-decoration: none;
+}
+
+.interest {
+  padding-bottom: 80px;
+
+  @include for-size(tablet-portrait-up) {
+    padding-bottom: 96px;
+  }
+
+  @include for-size(desktop-up) {
+    padding-bottom: 150px;
+  }
 }

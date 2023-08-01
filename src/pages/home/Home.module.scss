@@ -57,7 +57,7 @@
   .about {
     padding: 32px;
     @include for-size(tablet-portrait-up) {
-      padding: 40px;
+      padding: 0;
     }
     @include for-size(desktop-up) {
       padding: 0 260px 55px 165px;

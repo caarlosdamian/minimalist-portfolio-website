@@ -8,6 +8,7 @@ import {
 } from '../../assets';
 import { Button } from '../../components/button/Button';
 import { Card } from '../../components/card/Card';
+import { Interest } from '../../components/interest/Interest';
 import styles from './Home.module.scss';
 
 const Home = () => {
@@ -25,7 +26,9 @@ const Home = () => {
           <h1 className={styles.hero__title}>
             Hey, I’m Alex Spencer and I love building beautiful websites
           </h1>
-          <Button label="About me" />
+          <a href="#about" className="links">
+            <Button label="About me" />
+          </a>
         </section>
       </section>
       <section id="about" className={styles.about}>
@@ -38,6 +41,9 @@ const Home = () => {
           btnPath="/portafolio"
           cardText="I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work."
         />
+      </section>
+      <section className="interest">
+        <Interest />
       </section>
     </section>
   );

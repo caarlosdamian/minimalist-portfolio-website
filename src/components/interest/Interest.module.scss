@@ -1,0 +1,45 @@
+@import '/src/common/index.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+
+  @include for-size(tablet-portrait-up) {
+    flex-direction: row;
+    gap: 32px;
+
+    div {
+      order: 2;
+      flex: 1;
+
+      @include for-size(desktop-up) {
+        flex: 2;
+      }
+    }
+
+    a {
+      order: 3;
+      flex: 1;
+    }
+  }
+
+  .header {
+    color: $dark-blue-grayish;
+    text-align: center;
+    font-family: $font-family-ibarra;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 42px; /* 105% */
+    letter-spacing: -0.357px;
+    margin-top: 75px;
+
+    @include for-size(tablet-portrait-up) {
+      order: 1;
+      text-align: start;
+      margin-top: 0;
+      flex-basis: 350px;
+    }
+  }
+}
