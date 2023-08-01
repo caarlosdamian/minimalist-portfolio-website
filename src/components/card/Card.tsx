@@ -37,6 +37,7 @@ export const Card = ({
         <Link to={btnPath} className="links">
           <Button label={btnLabel} variant="secondary" />
         </Link>
+        <Separator />
       </section>
     </section>
   );

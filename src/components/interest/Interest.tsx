@@ -8,7 +8,7 @@ export const Interest = () => {
     <section className={styles.container}>
       <Separator />
       <h2 className={styles.header}>Interested in doing a project together?</h2>
-      <Link to="/contact" className='links'>
+      <Link to="/contact" className="links">
         <Button variant="secondary" label="Contact me" />
       </Link>
     </section>
