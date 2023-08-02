@@ -1,0 +1,14 @@
+@import '/src/common/index.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 72px;
+
+  @include for-size(tablet-portrait-up) {
+    gap: 80px;
+    padding-top: 94px;
+  }
+
+}

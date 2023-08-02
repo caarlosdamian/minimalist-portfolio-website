@@ -1,7 +1,7 @@
 import * as images from '../assets/index';
 import { PortafolioItem } from '../interfaces';
 
-export const portafolio: PortafolioItem[] = [
+export const portafolioInfo: PortafolioItem[] = [
   {
     id: 'manage',
     title: 'Manage',

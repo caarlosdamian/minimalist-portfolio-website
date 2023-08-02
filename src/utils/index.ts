@@ -1,3 +1,4 @@
 import { navItems } from './info';
+import { portafolioInfo } from './portafoli';
 
-export { navItems };
+export { navItems, portafolioInfo };
