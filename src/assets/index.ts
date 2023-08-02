@@ -14,6 +14,68 @@ import heroTablet from './homepage/tablet/image-homepage-hero.jpg';
 import profileDesktop from './homepage/desktop/image-homepage-profile.jpg';
 import profileMobile from './homepage/mobile/image-homepage-profile.jpg';
 import profileTablet from './homepage/tablet/image-homepage-profile.jpg';
+import portafolioBookmarkDesktop from './portfolio/desktop/image-portfolio-bookmark.jpg';
+import portafolioFyloDesktop from './portfolio/desktop/image-portfolio-fylo.jpg';
+import portafolioInsureDesktop from './portfolio/desktop/image-portfolio-insure.jpg';
+import portafolioManageDesktop from './portfolio/desktop/image-portfolio-manage.jpg';
+
+import portafolioBookmarkMobile from './portfolio/mobile/image-portfolio-bookmark.jpg';
+import portafolioFyloMobile from './portfolio/mobile/image-portfolio-fylo.jpg';
+import portafolioInsureMobile from './portfolio/mobile/image-portfolio-insure.jpg';
+import portafolioManageMobile from './portfolio/mobile/image-portfolio-manage.jpg';
+
+import portafolioBookmarkTablet from './portfolio/tablet/image-portfolio-bookmark.jpg';
+import portafolioFylotablet from './portfolio/tablet/image-portfolio-fylo.jpg';
+import portafolioInsureTablet from './portfolio/tablet/image-portfolio-insure.jpg';
+import portafolioManageTablet from './portfolio/tablet/image-portfolio-manage.jpg';
+
+import detailsBookmarkDesktopHero from './detail/desktop/image-bookmark-hero.jpg';
+import detailsBookmarkDesktopPreview from './detail/desktop/image-bookmark-preview-1.jpg';
+import detailsBookmarkDesktopPreviewTwo from './detail/desktop/image-bookmark-preview-2.jpg';
+
+import detailsFyloDesktopHero from './detail/desktop/image-fylo-hero.jpg';
+import detailsFyloDesktopPreview from './detail/desktop/image-fylo-preview-1.jpg';
+import detailsFyloDesktopPreviewTwo from './detail/desktop/image-fylo-preview-2.jpg';
+
+import detailsInsureDesktopHero from './detail/desktop/image-insure-hero.jpg';
+import detailsInsureDesktopPreview from './detail/desktop/image-insure-preview-1.jpg';
+import detailsInsureDesktopPreviewTwo from './detail/desktop/image-insure-preview-2.jpg';
+
+import detailsManageDesktopHero from './detail/desktop/image-manage-hero.jpg';
+import detailsManageDesktopPreview from './detail/desktop/image-manage-preview-1.jpg';
+import detailsManageDesktopPreviewTwo from './detail/desktop/image-manage-preview-2.jpg';
+
+import detailsBookmarkMobileHero from './detail/mobile/image-bookmark-hero.jpg';
+import detailsBookmarkMobilePreview from './detail/mobile/image-bookmark-preview-1.jpg';
+import detailsBookmarkMobilePreviewTwo from './detail/mobile/image-bookmark-preview-2.jpg';
+
+import detailsFyloMobileHero from './detail/mobile/image-fylo-hero.jpg';
+import detailsFyloMobilePreview from './detail/mobile/image-fylo-preview-1.jpg';
+import detailsFyloMobilePreviewTwo from './detail/mobile/image-fylo-preview-2.jpg';
+
+import detailsInsureMobileHero from './detail/mobile/image-insure-hero.jpg';
+import detailsInsureMobilePreview from './detail/mobile/image-insure-preview-1.jpg';
+import detailsInsureMobilePreviewTwo from './detail/mobile/image-insure-preview-2.jpg';
+
+import detailsManageMobileHero from './detail/mobile/image-manage-hero.jpg';
+import detailsManageMobilePreview from './detail/mobile/image-manage-preview-1.jpg';
+import detailsManageMobilePreviewTwo from './detail/mobile/image-manage-preview-2.jpg';
+
+import detailsBookmarkTabletHero from './detail/tablet/image-bookmark-hero.jpg';
+import detailsBookmarkTabletPreview from './detail/tablet/image-bookmark-preview-1.jpg';
+import detailsBookmarkTabletPreviewTwo from './detail/tablet/image-bookmark-preview-2.jpg';
+
+import detailsFyloTabletHero from './detail/tablet/image-fylo-hero.jpg';
+import detailsFyloTabletPreview from './detail/tablet/image-fylo-preview-1.jpg';
+import detailsFyloTabletPreviewTwo from './detail/tablet/image-fylo-preview-2.jpg';
+
+import detailsInsureTabletHero from './detail/tablet/image-insure-hero.jpg';
+import detailsInsureTabletPreview from './detail/tablet/image-insure-preview-1.jpg';
+import detailsInsureTabletPreviewTwo from './detail/tablet/image-insure-preview-2.jpg';
+
+import detailsManageTabletHero from './detail/tablet/image-manage-hero.jpg';
+import detailsManageTabletPreview from './detail/tablet/image-manage-preview-1.jpg';
+import detailsManageTabletPreviewTwo from './detail/tablet/image-manage-preview-2.jpg';
 
 export {
   logo,
@@ -31,5 +93,53 @@ export {
   heroTablet,
   profileDesktop,
   profileMobile,
-  profileTablet
+  profileTablet,
+  portafolioBookmarkDesktop,
+  portafolioBookmarkMobile,
+  portafolioFyloDesktop,
+  portafolioManageDesktop,
+  portafolioInsureDesktop,
+  portafolioFyloMobile,
+  portafolioManageMobile,
+  portafolioInsureMobile,
+  portafolioBookmarkTablet,
+  portafolioFylotablet,
+  portafolioInsureTablet,
+  portafolioManageTablet,
+  detailsBookmarkDesktopHero,
+  detailsBookmarkDesktopPreview,
+  detailsBookmarkDesktopPreviewTwo,
+  detailsFyloDesktopHero,
+  detailsFyloDesktopPreview,
+  detailsFyloDesktopPreviewTwo,
+  detailsInsureDesktopHero,
+  detailsInsureDesktopPreview,
+  detailsInsureDesktopPreviewTwo,
+  detailsManageDesktopHero,
+  detailsManageDesktopPreview,
+  detailsManageDesktopPreviewTwo,
+  detailsBookmarkMobileHero,
+  detailsBookmarkMobilePreview,
+  detailsBookmarkMobilePreviewTwo,
+  detailsFyloMobileHero,
+  detailsFyloMobilePreview,
+  detailsFyloMobilePreviewTwo,
+  detailsInsureMobileHero,
+  detailsInsureMobilePreview,
+  detailsInsureMobilePreviewTwo,
+  detailsManageMobileHero,
+  detailsManageMobilePreview,
+  detailsManageMobilePreviewTwo,
+  detailsBookmarkTabletHero,
+  detailsBookmarkTabletPreview,
+  detailsBookmarkTabletPreviewTwo,
+  detailsFyloTabletHero,
+  detailsFyloTabletPreview,
+  detailsFyloTabletPreviewTwo,
+  detailsInsureTabletHero,
+  detailsInsureTabletPreview,
+  detailsInsureTabletPreviewTwo,
+  detailsManageTabletHero,
+  detailsManageTabletPreviewTwo,
+  detailsManageTabletPreview,
 };
