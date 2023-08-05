@@ -1,0 +1,78 @@
+@import '/src/common/index.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+
+  .details {
+    .main__details {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      @include for-size(tablet-portrait-up) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        &--desc {
+          grid-row: 1/5;
+          grid-column: 2/3;
+        }
+
+        button {
+          grid-column: 1/2;
+        }
+      }
+
+      @include for-size(desktop-up) {
+        display: flex;
+        &--desc {
+          width: 350px;
+        }
+      }
+      &--title {
+        color: #33323d;
+        font-family: Ibarra Real Nova;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 42px; /* 105% */
+        letter-spacing: -0.357px;
+      }
+      &--desc {
+        color: #33323d;
+        font-family: Public Sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; /* 200% */
+        opacity: 0.8;
+      }
+      &--tools {
+        .tools__title,
+        .tools__item {
+          color: #5fb4a2;
+          font-family: Public Sans;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 30px;
+        }
+        .habilities {
+          display: flex;
+
+          .tools__item {
+            &:nth-child(2)::before {
+              content: '/';
+            }
+            &:nth-child(3)::before {
+              content: '/';
+            }
+          }
+        }
+      }
+    }
+  }
+}
