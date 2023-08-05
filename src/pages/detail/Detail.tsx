@@ -40,7 +40,9 @@ const Detail = () => {
             <h2 className={styles.tools__title}>{habilities}</h2>
             <div className={styles.habilities}>
               {languages.map((item) => (
-                <p key={item} className={styles.tools__item}>&nbsp;{item}&nbsp;</p>
+                <p key={item} className={styles.tools__item}>
+                  &nbsp;{item}&nbsp;
+                </p>
               ))}
             </div>
           </div>
@@ -49,7 +51,7 @@ const Detail = () => {
         <section className={styles.secondary__details}></section>
       </section>
       <Slider nextItem={nextItem} previusItem={previusItem} />
-      <Interest />
+      <Interest removeSeparator={true} />
     </section>
   );
 };

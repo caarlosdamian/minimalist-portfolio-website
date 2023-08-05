@@ -1,5 +1,14 @@
+@import '/src/common/index.scss';
+
 .separator {
   height: 1px;
   background: rgba(51, 50, 61, 0.15);
   width: 100%;
+  &.no__separator {
+    display: none;
+
+    @include for-size(tablet-portrait-up) {
+      display: block;
+    }
+  }
 }
