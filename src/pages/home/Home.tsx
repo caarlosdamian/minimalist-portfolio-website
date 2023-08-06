@@ -6,9 +6,7 @@ import {
   profileMobile,
   profileTablet,
 } from '../../assets';
-import { Button } from '../../components/button/Button';
-import { Card } from '../../components/card/Card';
-import { Interest } from '../../components/interest/Interest';
+import { Interest, Card, Button } from '../../components/';
 import styles from './Home.module.scss';
 
 const Home = () => {

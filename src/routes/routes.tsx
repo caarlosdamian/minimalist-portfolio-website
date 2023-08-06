@@ -2,7 +2,7 @@ import { lazy } from 'react';
 
 const Home = lazy(() => import('../pages/home/Home'));
 const Portafolio = lazy(() => import('../pages/portafolio/Portafolio'));
-const Detail = lazy(() => import('../pages/detail/Detail'));
+const Detail = lazy(() => import('../pages/details/Details'));
 const Contact = lazy(() => import('../pages/contact/Contact'));
 
 export const routes = [

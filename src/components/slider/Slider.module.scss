@@ -5,9 +5,11 @@
   grid-template-columns: repeat(2, 163px);
   width: 100%;
   gap: 0;
+  margin-top: 24px;
 
   @include for-size(tablet-portrait-up) {
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 40px;
   }
 }
 
@@ -34,7 +36,7 @@
       font-family: $font-family-ibarra;
       font-size: 32px;
       font-weight: 400;
-      line-height: 36px; /* 112.5% */
+      line-height: 36px;
       letter-spacing: -0.286px;
     }
     .item__header {
@@ -42,7 +44,7 @@
       font-family: $font-family-public;
       font-size: 16px;
       font-weight: 400;
-      line-height: 30px; /* 187.5% */
+      line-height: 30px;
       opacity: 0.5;
     }
   }

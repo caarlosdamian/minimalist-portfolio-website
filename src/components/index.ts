@@ -1,3 +1,9 @@
-export { Loader } from "./loader/Loader";
-export { Footer } from "./footer/Footer";
-export { Navbar } from "./navbar/Navbar";
+export { Loader } from './loader/Loader';
+export { Footer } from './footer/Footer';
+export { Navbar } from './navbar/Navbar';
+export { Picture } from './picture/Picture';
+export { Interest } from './interest/Interest';
+export { Slider } from './slider/Slider';
+export { Button } from './button/Button';
+export { Separator } from './separator/Separator';
+export { Card } from './card/Card';

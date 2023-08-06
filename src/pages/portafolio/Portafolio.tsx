@@ -1,5 +1,4 @@
-import { Card } from '../../components/card/Card';
-import { Interest } from '../../components/interest/Interest';
+import { Interest, Card } from '../../components';
 import { portafolioInfo } from '../../utils';
 import styles from './Portafoli.module.scss';
 
