@@ -1,22 +1,9 @@
+@import '/src/common/index.scss';
+
 .container {
   display: flex;
   flex-direction: column;
   gap: 32px;
-
-  .contant__details {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    .desc {
-      color: #33323d;
-      font-family: Public Sans;
-      font-size: 15px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 30px; /* 200% */
-      opacity: 0.8;
-    }
-  }
 
   .title {
     color: #33323d;
@@ -26,5 +13,62 @@
     font-weight: 700;
     line-height: 42px; /* 105% */
     letter-spacing: -0.357px;
+  }
+
+  @include for-size(desktop-up) {
+    padding: 80px 165px;
+    gap: 48px;
+  }
+
+  .contant__details {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    @include for-size(desktop-up) {
+      flex-direction: row;
+      gap: 125px;
+    }
+
+    .contant__info {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      .desc {
+        color: #33323d;
+        font-family: Public Sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; /* 200% */
+        opacity: 0.8;
+        @include for-size(desktop-up) {
+          width: 635px;
+        }
+      }
+    }
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    @include for-size(desktop-up) {
+      flex-direction: row;
+      gap: 125px;
+    }
+
+    .details_form {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      @include for-size(desktop-up) {
+        flex: 1;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+    }
   }
 }

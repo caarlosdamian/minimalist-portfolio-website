@@ -7,3 +7,4 @@ export { Slider } from './slider/Slider';
 export { Button } from './button/Button';
 export { Separator } from './separator/Separator';
 export { Card } from './card/Card';
+export { Input } from './input/Input';
