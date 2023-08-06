@@ -1,4 +1,11 @@
-import { githubLight, linkedinLight, twitterLight } from '../assets';
+import {
+  github,
+  githubLight,
+  linkedin,
+  linkedinLight,
+  twitter,
+  twitterLight,
+} from '../assets';
 
 export const navItems = [
   {
@@ -30,5 +37,20 @@ export const socialIcons = [
   {
     id: 'linkedin',
     icon: linkedinLight,
+  },
+];
+
+export const socialIconsBlack = [
+  {
+    id: 'github',
+    icon: github,
+  },
+  {
+    id: 'twitter',
+    icon: twitter,
+  },
+  {
+    id: 'linkedin',
+    icon: linkedin,
   },
 ];

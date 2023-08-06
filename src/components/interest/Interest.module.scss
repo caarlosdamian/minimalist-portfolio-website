@@ -9,6 +9,7 @@
   @include for-size(tablet-portrait-up) {
     flex-direction: row;
     gap: 32px;
+    padding: 80px 0;
 
     div {
       order: 2;
@@ -23,6 +24,10 @@
       order: 3;
       flex: 1;
     }
+  }
+
+  @include for-size(desktop-up) {
+    padding: 115px 0;
   }
 
   .header {
