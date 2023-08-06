@@ -42,6 +42,17 @@
     }
   }
 
+  &:disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+    &:hover {
+      background: white;
+      .label {
+        color: #33323d;
+      }
+    }
+  }
+
   .label {
     color: #33323d;
   }

@@ -56,7 +56,7 @@
         font-family: $font-family-ibarra;
         font-size: 40px;
         font-weight: 700;
-        line-height: 42px; /* 105% */
+        line-height: 42px;
         letter-spacing: -0.357px;
       }
       &--desc {
@@ -64,7 +64,7 @@
         font-family: $font-family-public;
         font-size: 15px;
         font-weight: 400;
-        line-height: 30px; /* 200% */
+        line-height: 30px;
         opacity: 0.8;
 
         @include for-size(desktop-up) {
@@ -110,7 +110,7 @@
         font-family: $font-family-ibarra;
         font-size: 32px;
         font-weight: 400;
-        line-height: 42px; 
+        line-height: 42px;
         letter-spacing: -0.286px;
       }
 
@@ -119,7 +119,7 @@
         font-family: $font-family-public;
         font-size: 15px;
         font-weight: 400;
-        line-height: 30px; 
+        line-height: 30px;
         opacity: 0.8;
       }
 

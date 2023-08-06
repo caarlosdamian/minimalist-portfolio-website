@@ -1,11 +1,13 @@
+@import '/src/common/index.scss';
+
 .container {
   display: flex;
   flex-direction: column;
   gap: 8px;
 
   .error {
-    color: #f43030;
-    font-family: Public Sans;
+    color: $red;
+    font-family: $font-family-public;
     font-size: 10px;
     font-style: italic;
     font-weight: 700;
@@ -20,9 +22,8 @@
     background-color: rgba(51, 50, 61, 0.15);
     &::placeholder {
       color: #33323d;
-      font-family: Public Sans;
+      font-family: $font-family-public;
       font-size: 13px;
-      font-style: normal;
       font-weight: 400;
       line-height: 30px;
       opacity: 0.4;
@@ -33,11 +34,11 @@
     }
 
     &.error {
-      border: 1px solid #f43030;
+      border: 1px solid $red !important;
     }
 
     &:focus {
-      border: 1px solid #5fb4a2;
+      border: 1px solid $primary-color;
     }
   }
 }

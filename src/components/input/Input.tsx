@@ -1,30 +1,40 @@
-import { InputHTMLAttributes } from 'react';
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+import { InputHTMLAttributes, useMemo } from 'react';
+
 import styles from './Input.module.scss';
+import { UseFormRegister } from 'react-hook-form';
+import { Inputs } from '../../pages/contact/Contact';
 
 interface Props extends InputHTMLAttributes<HTMLInputElement> {
-  error?: boolean;
+  errors?: any;
   label: string;
   isTextArea?: boolean;
+  register: UseFormRegister<Inputs>;
+  name: 'name' | 'message' | 'email';
 }
 export const Input = ({
-  error = false,
+  errors,
   name,
   placeholder,
   label,
   isTextArea = false,
+  register,
 }: Props) => {
-  console.log('===isTextArea=', isTextArea);
   return (
     <label htmlFor={name} className={styles.container}>
       {label}
       <input
         placeholder={placeholder}
-        name={name}
         className={`${styles.input} ${isTextArea ? styles.textArea : ''} ${
-          error ? styles.error : ''
+          errors[name] ? styles.error : ''
         }`}
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+        {...register(name)}
+        name={name}
       />
-      {false && <span className={styles.error}>This is Error</span>}
+      {errors[name] && (
+        <span className={styles.error}>{errors[name]?.message}</span>
+      )}
     </label>
   );
 };

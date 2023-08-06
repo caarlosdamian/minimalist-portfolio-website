@@ -7,10 +7,10 @@ interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 export const Button = ({ variant = 'primary', label, ...props }: Props) => {
   return (
     <button
-      {...props}
-      className={`${styles.btn} ${
-        variant === 'secondary' ? styles.secondary : ''
-      }`}
+    className={`${styles.btn} ${
+      variant === 'secondary' ? styles.secondary : ''
+    }`}
+    {...props}
     >
       {variant === 'primary' && (
         <div className={styles.arrow}>

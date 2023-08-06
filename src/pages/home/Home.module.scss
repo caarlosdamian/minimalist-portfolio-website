@@ -20,7 +20,7 @@
       gap: 32px;
 
       @include for-size(tablet-portrait-up) {
-        background: #fafafa;
+        background: $secondary-color;
         position: absolute;
         width: 514px;
         bottom: 0;
@@ -33,17 +33,20 @@
       }
 
       .hero__title {
-        color: #33323d;
+        color: $dark-blue-grayish;
         font-family: $font-family-ibarra;
         font-size: 50px;
         font-style: normal;
         font-weight: 700;
         line-height: 50px;
         letter-spacing: -0.446px;
+        width: 311px;
+
         @include for-size(tablet-portrait-up) {
           font-size: 40px;
           line-height: 42px;
           letter-spacing: -0.357px;
+          width: 100%;
         }
         @include for-size(desktop-up) {
           font-size: 50px;
