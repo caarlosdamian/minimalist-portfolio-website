@@ -1,5 +1,5 @@
-import { Suspense, lazy } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Suspense } from 'react';
+import { Route } from 'react-router-dom';
 import { App } from '../common/App';
 
 import {

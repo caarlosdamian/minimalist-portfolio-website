@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
-import { InputHTMLAttributes, useMemo } from 'react';
+import { InputHTMLAttributes } from 'react';
 
 import styles from './Input.module.scss';
 import { UseFormRegister } from 'react-hook-form';
@@ -28,7 +29,6 @@ export const Input = ({
         className={`${styles.input} ${isTextArea ? styles.textArea : ''} ${
           errors[name] ? styles.error : ''
         }`}
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-call
         {...register(name)}
         name={name}
       />
